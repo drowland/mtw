@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Toy Story",
+    "story_line" : "Story of little boy and his toys that come to life",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=KYz2wyBy3kc",
+    "rating": "G",
+    "duration" : "81",
+    "release_year": "1995"
+  },
+  {
+    "title": "Avatar",
+    "story_line" : "A marine on an alien planet",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "rating": "PG-13",
+    "duration" : "161",
+    "release_year": "2009"
+  },
+  {
+    "title": "Crocodile Dundee",
+    "story_line" : "An American reporter goes to the Australian outback to meet an eccentric poacher and invites him to New York city",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/d/d6/Crocodile_dundee_poster.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=JrRfx71_4CQ",
+    "rating": "PG-13",
+    "duration" : "97",
+    "release_year": "1986"
+  },
+  {
+    "title": "Up!",
+    "story_line" : "Old widower tries to fly his home to Paradise Falls in an attempt to avoid being taken to a nursing home",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=ORFWdXl_zJ4",
+    "rating": "PG",
+    "duration" : "96",
+    "release_year": "2009"
+  },
+  {
+    "title": "Frozen",
+    "story_line" : "Newly crowned Queen Elsa accidentaly uses her power to tun things into ice",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=TbQm5doF_Uc",
+    "rating": "PG",
+    "duration" : "102",
+    "release_year": "2013"
+  },
+  {
+    "title": "Monsters Inc",
+    "story_line" : "Monsters generate their city's power by scaring children",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=8IBNZ6O2kMk",
+    "rating": "PG",
+    "duration" : "92",
+    "release_year": "2001"
+  },
+  {
+    "title": "Cars",
+    "story_line" : "A hot-shot race-car named Lightning McQueen gets waylaid in Radiator Springs",
+    "poster_image_url": "http://upload.wikimedia.org/wikipedia/en/3/34/Cars_2006.jpg",
+    "trailer_youtube_url": "https://www.youtube.com/watch?v=siW2HeFARwE",
+    "rating": "G",
+    "duration" : "116",
+    "release_year": "2006"
+  }
+]

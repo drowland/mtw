@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Trailer Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- LOCAL RUNNING VERSION
+    <link href="../../../../Dev/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    -->
+
+    <!-- INTERNET CONNECTED VERSION -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    
+
+    <!-- Custom styles for this template -->
+    <link href="mtw.css" rel="stylesheet">
+  </head>
+
+<body>
+    <!-- About Modal HTML -->
+    <div id="aboutModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This Movie Trailer Website was created by <strong>David Rowland</strong> for the Udacity Full Stack Web Developer Nanodegree.</p>
+                    <p>Project 1 - submitted May 2015</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--/modal about-->
+
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div> <!--/modal trailer -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="padding-right: 10px"></span>Movie Trailer Website</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#aboutModal" data-toggle="modal">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container starter-template">
+      <h1>Your go to site for movie trailers</h1>
+      <p class="lead">Welcome to the Movie Trailer Website, the fastest growing<br/>repository of movies trailers freely available for your viewing pleasure.</p>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <p class="center-block"><h4><span class="label label-success">NOW TRENDING</span></h4></p> 
+          <!-- Carousel control -->
+          <div id="popular-movies-carousel" class="carousel slide center-block" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#popular-movies-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#popular-movies-carousel" data-slide-to="1" class=""></li>
+              <li data-target="#popular-movies-carousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              
+<div class="item active carousel_tile carousel-image" data-trailer-youtube-id="JrRfx71_4CQ" data-toggle="modal" data-target="#trailer">
+  <img alt="Crocodile Dundee" src="http://upload.wikimedia.org/wikipedia/en/d/d6/Crocodile_dundee_poster.jpg" class="img-responsive center-block carousel-image">
+  <div class="carousel-caption">
+      <h3>Crocodile Dundee</h3>
+      <p>1986</p>
+  </div>
+</div>
+
+<div class="item carousel_tile carousel-image" data-trailer-youtube-id="TbQm5doF_Uc" data-toggle="modal" data-target="#trailer">
+  <img alt="Frozen" src="http://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg" class="img-responsive center-block carousel-image">
+  <div class="carousel-caption">
+      <h3>Frozen</h3>
+      <p>2013</p>
+  </div>
+</div>
+
+<div class="item carousel_tile carousel-image" data-trailer-youtube-id="siW2HeFARwE" data-toggle="modal" data-target="#trailer">
+  <img alt="Cars" src="http://upload.wikimedia.org/wikipedia/en/3/34/Cars_2006.jpg" class="img-responsive center-block carousel-image">
+  <div class="carousel-caption">
+      <h3>Cars</h3>
+      <p>2006</p>
+  </div>
+</div>
+
+            </div>
+            <a class="left carousel-control" href="#popular-movies-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#popular-movies-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <p class="center-block"><h4><span class="label label-primary">RECENTLY ADDED</span></h4></p> 
+          <div class="panel panel-primary recently-added center-block">
+            <div class="panel-body">
+              
+<p><h5>Up! <span class="label label-primary">2009</span></h5></p>
+
+<p><h5>Frozen <span class="label label-primary">2013</span></h5></p>
+
+<p><h5>Cars <span class="label label-primary">2006</span></h5></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div class="container starter-template main-movie-collection">
+      
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="165" height="256">
+    <p><h6>Toy Story <span class="label label-info">G</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="5PSNL1qE6VY" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg" width="165" height="256">
+    <p><h6>Avatar <span class="label label-info">PG-13</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="JrRfx71_4CQ" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/d/d6/Crocodile_dundee_poster.jpg" width="165" height="256">
+    <p><h6>Crocodile Dundee <span class="label label-info">PG-13</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="ORFWdXl_zJ4" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg" width="165" height="256">
+    <p><h6>Up! <span class="label label-info">PG</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="TbQm5doF_Uc" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg" width="165" height="256">
+    <p><h6>Frozen <span class="label label-info">PG</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="8IBNZ6O2kMk" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG" width="165" height="256">
+    <p><h6>Monsters Inc <span class="label label-info">PG</span></h6></p>
+</div>
+
+<div class="col-md-6 col-lg-3 movie-tile text-center" data-trailer-youtube-id="siW2HeFARwE" data-toggle="modal" data-target="#trailer">
+    <img src="http://upload.wikimedia.org/wikipedia/en/3/34/Cars_2006.jpg" width="165" height="256">
+    <p><h6>Cars <span class="label label-info">G</span></h6></p>
+</div>
+
+    </div>
+
+    <div class="container starter-template">
+      <nav>
+        <ul class="pager">
+          <li class="disabled"><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- LOCAL RUNNING VERSIONS 
+    <script src="../../../..//Dev/jQuery/jquery-2.1.4.js"></script>
+    <script src="../../../../Dev/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- INTERNET CONNECTED VERSION -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      // Pause the video when the modal is closed
+      $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+         $("#trailer-video-container").empty();
+      });
+
+      // Start playing the video whenever the trailer modal is opened
+      $(document).on('click', '.movie-tile, .carousel_tile', function (event) {
+          var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+          var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+          $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            'id': 'trailer-video',
+            'type': 'text-html',
+            'src': sourceUrl,
+            'frameborder': 0
+          }));
+      });
+
+      // Animate in the movies when the page loads
+      $(document).ready(function () {
+        $('.movie-tile').hide().first().show("fast", function showNext() {
+          $(this).next("div").show("fast", showNext);
+        });
+      });
+
+      // Need to add a function so that when the About model is closed, focus doesn't remain
+      // on the About button in the nav bar
+      $('#aboutModal').on('hidden.bs.modal', function () {
+        window.focus();
+      });
+    </script>
+  </body>
+</html>
